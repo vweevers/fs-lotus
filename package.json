@@ -1,0 +1,29 @@
+{
+  "name": "fs-lotus",
+  "version": "0.0.1",
+  "description": "Sugar to open and close file descriptor",
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "combine-errors": "~3.0.3"
+  },
+  "devDependencies": {
+    "tape": "~4.6.3"
+  },
+  "repository": "vweevers/fs-lotus",
+  "bugs": "https://github.com/vweevers/fs-lotus/issues",
+  "homepage": "https://github.com/vweevers/fs-lotus",
+  "keywords": [
+    "close",
+    "fd",
+    "fs",
+    "open"
+  ],
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=2.0.0"
+  }
+}
