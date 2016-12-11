@@ -1,7 +1,7 @@
 {
   "name": "fs-lotus",
   "version": "0.0.1",
-  "description": "Sugar to open and close file descriptor",
+  "description": "Sugar to open and close a file descriptor",
   "license": "MIT",
   "author": "Vincent Weevers",
   "scripts": {
