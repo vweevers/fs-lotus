@@ -10,11 +10,11 @@
 const open = require('fs-lotus')
     , fs = require('fs')
 
-function readExactly (filename, length, done) {
+const readExactly = function (filename, pos, length, done) {
   open(filename, 'r', function (err, fd, close) {
     if (err) return done(err)
 
-    fs.read(fd, Buffer(length), length, 4, 0, function (err, bytesRead, buf) {
+    fs.read(fd, Buffer(length), 0, length, pos, function (err, bytesRead, buf) {
       if (err) return close(done, err)
 
       if (bytesRead !== length) {
@@ -28,6 +28,18 @@ function readExactly (filename, length, done) {
 ```
 
 The `open` function has the same signature as [`fs.open(path, flags[, mode], callback)`](https://nodejs.org/api/fs.html#fs_fs_open_path_flags_mode_callback). Except that `callback` also receives a `close(callback, err, ...args)` function, which calls `fs.close` for you. An error from `fs.close` (if any) will be [combined](https://github.com/matthewmueller/combine-errors) with your error (if any).
+
+This pattern ensures that our `readExactly` function doesn't leak fd's.
+
+```js
+readExactly('readme.md', 0, 10, function (err, buf) {
+  console.log(buf.toString()) // '# fs-lotus'
+})
+
+readExactly('readme.md', 1e5, 10, function (err, buf) {
+  console.log(err.toString()) // 'Error: End of file'
+})
+```
 
 ## install
 
