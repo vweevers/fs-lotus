@@ -5,13 +5,12 @@
   "license": "MIT",
   "author": "Vincent Weevers",
   "scripts": {
-    "test": "node test.js && doctap *.md"
+    "test": "node test.js"
   },
   "dependencies": {
     "combine-errors": "~3.0.3"
   },
   "devDependencies": {
-    "doctap": "0.0.2",
     "tape": "~4.6.3"
   },
   "repository": "vweevers/fs-lotus",
