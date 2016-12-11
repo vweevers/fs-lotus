@@ -2,7 +2,7 @@
 
 **Sugar to open and close a file descriptor.**
 
-[![npm status](http://img.shields.io/npm/v/fs-lotus.svg?style=flat-square)](https://www.npmjs.org/package/fs-lotus) [![Travis build status](https://img.shields.io/travis/vweevers/fs-lotus.svg?style=flat-square&label=travis)](http://travis-ci.org/vweevers/fs-lotus) [![AppVeyor build status](https://img.shields.io/appveyor/ci/vweevers/fs-lotus.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/vweevers/fs-lotus) [![Dependency status](https://img.shields.io/david/vweevers/fs-lotus.svg?style=flat-square)](https://david-dm.org/vweevers/fs-lotus)
+[![npm status](http://img.shields.io/npm/v/fs-lotus.svg?style=flat-square)](https://www.npmjs.org/package/fs-lotus) [![node](https://img.shields.io/node/v/fs-lotus.svg?style=flat-square)](https://www.npmjs.org/package/fs-lotus) [![Travis build status](https://img.shields.io/travis/vweevers/fs-lotus.svg?style=flat-square&label=travis)](http://travis-ci.org/vweevers/fs-lotus) [![AppVeyor build status](https://img.shields.io/appveyor/ci/vweevers/fs-lotus.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/vweevers/fs-lotus) [![Dependency status](https://img.shields.io/david/vweevers/fs-lotus.svg?style=flat-square)](https://david-dm.org/vweevers/fs-lotus)
 
 ## usage
 
